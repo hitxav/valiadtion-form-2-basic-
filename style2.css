@@ -1,0 +1,38 @@
+#wrapper {
+  width: 30%;
+  margin: 50px auto;
+  padding: 50px;
+  background: linear-gradient(to bottom, #3333cc 22%, #6600ff 100%);
+  border-radius:20px;
+  box-shadow: 5px 10px 18px #888888; 
+}
+
+.inn{
+	border-width: 0 0 1px !important;
+	border-color:white;
+	width: 100%;
+    padding: 10px;
+  background: transparent!important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity:0.5; /* Firefox */
+}
+
+.ch{
+	color: white;
+}
+.n{
+	background-color:white;
+  color:black ;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 1px 2px 5px #888888; 
+  
+}
+.h{
+	color: white;
+}

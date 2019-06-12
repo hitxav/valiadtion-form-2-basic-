@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+.right{
+float:right;
+display:inline;
+padding:10px;
+color:white;
+margin-left: 15px;
+
+border:2px solid white;
+}
+li:hover{
+	background-color: white;
+	color:black;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+	color:black;
+
+}
+body
+ {  background-image: url("images.png");
+ 
+    
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+
+#wrapper {
+  width: 30%;
+  float :left;
+  margin: 50px auto;
+  padding: 50px;
+  background:white;
+  border-radius:20px;
+  box-shadow: 5px 10px 18px black; 
+}
+
+.inn{
+	border-width: 0 0 1px !important;
+	border-color:black;
+	width: 100%;
+    padding: 10px;
+  background: transparent!important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity:0.5; /* Firefox */
+}
+
+.ch{
+	color: black;
+}
+.n{
+  background: linear-gradient(to bottom, #3399ff 5%, #0066cc 100%);
+  color:white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 1px 2px 5px #888888; 
+  
+}
+.h{
+	color: black;
+	font-size: 30px;
+}
+
+
+
+</style>
+<head>
+	<title>Home</title>
+
+
+</head>
+<body>
+
+
+
+<ul >
+	<li class="right">About us</li>
+	
+	<li class="right">Contact us</li>
+	<li class="right"><a href="login.html">Login</a></li>
+</ul>
+
+
+
+
+<div id="wrapper">
+<form   >
+	<h3 class="h">Registration Form</h3>
+	
+	<div >
+	<input type="text" name="" placeholder="Name" id="name" onblur="validatename()" class="inn">
+	</div>
+	<br>
+    <div >
+	<input type="email" name="" id="email" placeholder="Email-id" onblur="vemail()" class="inn">
+	</div>
+	<br>
+    <div >
+	<input type="tel" name="" id="number" placeholder="Mobile Number" onblur="validatemob()" class="inn">
+    </div>
+	<br>
+	<div>
+    <label class="ch">Gender:</label>
+	<input type="radio" name="gender" value="male"  id="genderm" onblur="validategen()" ><label class="ch">Male</label> 
+    <input type="radio" name="gender" value="female"  id="genderw" onblur="validategen()" ><label class="ch">Female</label>
+	</div>
+	<br>
+	
+	<div >
+	<input type="password" name="" id="pw" placeholder="Password" onblur="validatepass()" class="inn">
+	</div>
+	<br><br>
+  <input type="button"  value="REGISTER" class="n" id="submit" onclick="validate()">
+ 
+</form>
+</div>
+
+<script type="text/javascript" src="brain.js"></script>	
+
+</body>
+</html>

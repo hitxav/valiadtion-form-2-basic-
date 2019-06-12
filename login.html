@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="stylesheet" 
+          href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<title>
+		
+	</title>
+</head>
+<body>
+<div class="box">
+<form >
+	
+	<div class="in-container">
+	 <i class="fa fa-user icon"></i> 
+	<input type="text" id="name" placeholder="Name" class="in" onblur="na()" >
+  </div>
+    <br>
+    
+    <div class="in-container">
+    <i class="fa fa-key icon"></i>
+    <input type="passsword" placeholder="Password" id="pw" class="in" onblur="pass()">
+    </div> 
+    <br>
+   <br>
+   <input type="button" value="LOGIN" id="submit" onclick="check()" class="b1"/>
+   <br><br>
+   <a href="reg.html">Register now</a>
+   
+</form>
+</div>
+<script type="text/javascript" src="brain2.js"></script>
+</body>
+</html>

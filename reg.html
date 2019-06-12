@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<title>Registration Form</title>
+	<script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+<form>
+	<h3 class="h">Registration Form</h3>
+	<div >
+	<input type="text" name="" placeholder="Name" id="name" onblur="validatename()" class="inn">
+	</div>
+	<br>
+    <div >
+	<input type="email" name="" id="email" placeholder="Email-id" onblur="vemail()" class="inn">
+	</div>
+	<br>
+    <div >
+	<input type="tel" name="" id="number" placeholder="Mobile Number" onblur="validatemob()" class="inn">
+    </div>
+	<br>
+	<div>
+    <label class="ch">Gender:</label>
+	<input type="radio" name="gender" value="male"  id="genderm" onblur="validategen()" ><label class="ch">Male</label> 
+    <input type="radio" name="gender" value="female"  id="genderw" onblur="validategen()" ><label class="ch">Female</label>
+	</div>
+	<br>
+	
+	<div>
+	<input type="password" name="" id="pw" placeholder="Password" onblur="validatepass()" class="inn">
+	</div>
+	<br>
+
+	<div>
+	<input type="password" name="" id="pw2" placeholder="Re-write Password" onblur="samepass()" class="inn">
+	</div>
+	<br><br>
+  <input type="button"  value="REGISTER" class="n" id="submit" onclick="validate()">
+ 
+</form>
+</div>
+
+<script type="text/javascript" src="brain.js"></script>	
+</body>
+</html>
